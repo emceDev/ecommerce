@@ -1,0 +1,66 @@
+.form {
+	font-family: sans-serif;
+	width: 70vw;
+	height: 80vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: rgba(137, 43, 226, 0.87);
+	color: white;
+}
+.form label {
+}
+.form form {
+	width: 50vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form input {
+	width: 30vw;
+	padding: 1%;
+	font-weight: bold;
+}
+.form .error {
+	min-height: 5%;
+}
+.form button {
+	margin-top: 1vh;
+	width: 30vw;
+}
+.cart {
+	width: 70vw;
+	height: 100%;
+	/* background-color: burlywood; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cartItems {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: brown;
+	height: 50vh;
+	width: 50vw;
+}
+.cart h4 {
+	padding: 0%;
+}
+.cart li {
+	list-style: none;
+	opacity: 1;
+	animation: appear 1s;
+}
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
