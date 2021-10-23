@@ -27,3 +27,9 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Form accepts products as single words or products divided by comma ie banana OR banana soup, apple
+
+## Notes:
+
+Cart can be easily removed without any consequences

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import styles from '../../styles/form.module.css'
+import Cart from '../components/Cart'
 
 function Form() {
     const [buyerName, setBuyerName] = useState([]);
@@ -78,15 +79,8 @@ function Form() {
             <button onClick={addToCart}>add to cart</button>
             <button type="submit">Buy</button>
         </form>
-        
-        <div className={styles.cart}>
-            <p>Cart:</p>
-            <div className={styles.cartItems}>
-            {cart.map(x=>{
-                return <li>{x}</li>
-            })}
-            </div>
-        </div>
+        <Cart products={cart}/>
+
 
     </div>);
 }
